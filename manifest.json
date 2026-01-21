@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Study Focus",
+  "version": "1.0",
+  "description": "Reminds you to study and blocks distractions.",
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
