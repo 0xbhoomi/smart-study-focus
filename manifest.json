@@ -2,9 +2,16 @@
   "manifest_version": 3,
   "name": "Smart Study Focus",
   "version": "1.0",
-  "description": "Reminds you to study and blocks distractions.",
-  "permissions": ["tabs"],
+  "description": "Blocks YouTube and Instagram to help you focus on studying.",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.instagram.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "Smart Study Focus"
   }
 }
